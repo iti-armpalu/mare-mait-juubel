@@ -211,7 +211,7 @@ const DetailsSection = () => {
             <p className="invitation-body text-foreground font-medium">
               Kell 18:00
             </p>
-            <p className="text-sm text-muted-foreground mt-1">Kogunemine alates 15:00</p>
+            <p className="text-sm text-muted-foreground mt-1">Soovi korral võib kohale tulla varem, et nautida ümbrust ja loodust</p>
           </motion.div>
 
           <motion.div
@@ -224,9 +224,9 @@ const DetailsSection = () => {
           >
             <MapPin className="w-6 h-6 text-primary mb-3" strokeWidth={1.5} />
             <p className="invitation-label mb-2">Asukoht</p>
-            <p className="invitation-body text-foreground font-medium">
+            <a href="https://uueda.ee/" target="_blank" rel="noopener noreferrer" className="invitation-body text-primary font-medium underline underline-offset-2 hover:opacity-80 transition-opacity">
               Uueda Puhkekeskus
-            </p>
+            </a>
             <p className="text-sm text-muted-foreground mt-1">Nurme, Tori vald</p>
             <p className="text-sm text-muted-foreground">Pärnu maakond</p>
           </motion.div>
