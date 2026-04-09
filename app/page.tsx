@@ -82,7 +82,15 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.65 }}
             >
-              Mait 70. ja Mare 65. sünnipäev
+              Mait ja Mare
+            </motion.p>
+            <motion.p
+              className="invitation-heading mb-2"
+              initial={{ opacity: 0, y: 14 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.65 }}
+            >
+              135
             </motion.p>
 
             <motion.p
@@ -132,13 +140,9 @@ const GreetingSection = () => {
         <div className="gold-divider mb-8" />
 
         <p className="invitation-body text-muted-foreground leading-loose">
-          Aastad on kinkinud meile rohkelt ilusaid hetki,
-          mida soovime teiega jagada. Oleks suur rõõm,
-          kui saaksite meiega koos seda erilist päeva tähistada.
-        </p>
-
-        <p className="invitation-body text-muted-foreground leading-loose mt-6">
-          Teie kohalolek on kõige ilusam kingitus.
+          Aastad on kinkinud meile rohkelt toredaid päevi ja ilusaid hetki,
+          mida soovime teiega jagada. On suur rõõm, kui saaksite koos meiega
+          seda sündmust tähistada.
         </p>
 
         <p className="mt-10 font-serif text-lg italic text-foreground">
@@ -261,11 +265,17 @@ const RSVPSection = () => {
       >
         <p className="invitation-label mb-4">Palun anna teada</p>
         <h2 className="invitation-heading text-foreground mb-4">RSVP</h2>
-        <p className="invitation-body text-muted-foreground mb-10">
+        <p className="invitation-body text-muted-foreground">
           Palun anna oma tulekust teada hiljemalt 1. juuniks emaili teel:{" "}
           <a href="mailto:pidu@email.ee" className="text-primary underline">
-              mait.armpalu@mail.ee
-            </a>
+            mait.armpalu@mail.ee
+          </a>
+        </p>
+        <p className="invitation-body text-muted-foreground mb-10">
+          või WhatsAppi teel Marele:{" "}
+          <a href="https://wa.me/37258049500" className="text-primary underline">
+            WhatsApp
+          </a>
         </p>
       </motion.div>
     </section>
