@@ -229,22 +229,47 @@ const DetailsSection = () => {
             </a>
             <p className="text-sm text-muted-foreground mt-1">Nurme, Tori vald</p>
             <p className="text-sm text-muted-foreground">Pärnu maakond</p>
+            <a
+              href="https://maps.app.goo.gl/hAcZQbZaiEc12qCD7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-primary underline underline-offset-2 hover:opacity-80 transition-opacity mt-2"
+            >
+              Vaata Google Mapsis
+            </a>
           </motion.div>
         </div>
 
         <motion.div
-          className="mt-14 p-6 rounded-lg bg-muted/50 border border-border"
+          className="mt-14 rounded-lg bg-muted/50 border border-border overflow-hidden text-left"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeUp}
           custom={5}
         >
-          <p className="invitation-body text-muted-foreground text-sm md:text-base">
-            Täpsem info kohalesaamise, parkimise ja majutuse kohta lisandub peagi.
-          </p>
-        </motion.div>
+          <div className="p-6 md:p-8 space-y-3">
+            <p className="invitation-label text-xs uppercase tracking-wider text-muted-foreground">Saabumisjuhised</p>
+            <p className="invitation-body text-muted-foreground text-sm md:text-base leading-relaxed">
+              Sõites Pärnu linnapiirist umbes 5 km Tallinna poole, ületate Sauga jõe silla ning pöörate esimesel võimalusel paremale (pöörde järelt leiate juba Uueda Puhkekeskuse viida). Jätka liikumist 2 km mööda Vana Tallinna–Pärnu maanteed. Peagi näete paremal pool teed <span className="font-medium text-foreground">UUEDA</span> silti, mille järelt õue pöörates oletegi kohale jõudnud!
+            </p>
+          </div>
 
+          <div className="border-t border-border" />
+
+          <div className="p-6 md:p-8 bg-muted/30 text-left space-y-3">
+            <p className="invitation-label text-xs uppercase tracking-wider text-muted-foreground">Majutus ja parkimine</p>
+            <div className="space-y-2">
+              <p className="invitation-body text-muted-foreground text-sm md:text-base">
+                Kohapeal on võimalik parkida.
+              </p>
+              <p className="invitation-body text-muted-foreground text-sm md:text-base">
+                Majutus on broneeritud ja arvestatud kõigiga. Toad võivad olla erineva suurusega – nt 6-le, 4-le või 2-le inimesele. Lisainfo saamiseks võta ühendust Marega WhatsAppi teel.
+              </p>
+            </div>
+          </div>
+        </motion.div>
+        
       </div>
     </section>
   );
@@ -266,7 +291,7 @@ const RSVPSection = () => {
         <p className="invitation-label mb-4">Palun anna teada</p>
         <h2 className="invitation-heading text-foreground mb-4">RSVP</h2>
         <p className="invitation-body text-muted-foreground">
-          Palun anna oma tulekust teada hiljemalt 1. juuniks emaili teel:{" "}
+          Palun anna oma tulekust ja ööbimissoovist teada hiljemalt 1. juuniks emaili teel:{" "}
           <a href="mailto:pidu@email.ee" className="text-primary underline">
             mait.armpalu@mail.ee
           </a>
